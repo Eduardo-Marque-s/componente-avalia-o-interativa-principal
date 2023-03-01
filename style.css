@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Lato:wght@300;400;700;900&family=Montserrat:wght@500;700&family=Ms+Madi&family=Noto+Sans+JP:wght@100&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@100;300;500&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+.corpo {
+    background: var(--Dark-Blue);
+    width: 425px;
+    height: 405px;
+    border-radius: 25px;
+    padding: 2.5rem;
+    color: white;
+}
+
+.estrela {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsl(211, 19%, 24%);
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 15px;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 35px;
+
+}
+
+.circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(211, 19%, 23%);
+    color: white;
+    text-decoration: none;
+}
+
+.circulo:hover {
+    background-color: var(--Medium-Grey);
+    cursor: pointer;
+    color: white;
+}
+
+.circulo:focus {
+    background-color: var(--Orange);
+    color: white;
+}
+
+.btu {
+    padding-top: 2rem;
+}
+
+button {
+    margin-top: auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    width: 350px;
+    height: 40px;
+    background-color: hsl(25, 97%, 53%);
+    border-radius: 25px;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+/* outra parte*/
+.card {
+    display: none;
+    flex-direction: column;
+    background: hsl(213, 19%, 18%);
+    width: 416px;
+    height: 350px;
+    border-radius: 25px;
+    padding: 2.5rem;
+    color: hsl(217, 12%, 63%);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.tex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.tex2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 205px;
+    height: 30px;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(212, 19%, 15%);
+}
+
+.h12 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.p2 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: -15px;
+
+}
+
+
+@media (min-width:600px) {
+    .corpo {
+        width: 412px;
+        height: 412px;
+        padding: 34px;
+    }
+}
